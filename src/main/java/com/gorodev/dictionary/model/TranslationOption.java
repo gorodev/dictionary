@@ -67,4 +67,9 @@ public class TranslationOption {
     public void setExamples(List<TranslationExample> examples) {
         this.examples = examples;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s - [%s] - %s", tx, ts, tr);
+    }
 }
