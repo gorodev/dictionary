@@ -35,7 +35,7 @@ public class Translation {
                                     collect(Collectors.joining("\n"));
                     String partOfSpeech = option.getPartOfSpeech();
                     String synonyms = option.getSynonyms();
-                    return ":white_check_mark: " + option.getId() + ". " + shortInfo
+                    return "✅ " + option.getId() + ". " + shortInfo
                             + " (`" + partOfSpeech + "`)\n"
                             + (StringUtils.isEmpty(examples) ? "" : "\n" + examples)
                             + ((!StringUtils.isEmpty(examples) && !StringUtils.isEmpty(synonyms)) ? "\n\n" : "")

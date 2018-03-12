@@ -16,6 +16,11 @@ dictionary.translate("ES", "EN", "andar").ifPresent(translation -> {
         .collect(Collectors.joining("\n"));
     System.out.println(options);
 });
+
+// or print as markdown
+
+dictionary.translate("ES", "EN", "andar")
+                .ifPresent(translation -> System.out.println(translation.toMarkdown()));
 ```
 
 # Output example:
